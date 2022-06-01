@@ -11,4 +11,5 @@ void main () {
     scanf("%f %f %f",&x,&y,&z);
     n=b-x-y-z;
         printf("The total runs made by Rohit Sharma were %f\n",n);
+        getch();
 }
