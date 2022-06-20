@@ -1,0 +1,43 @@
+   #include <stdio.h>
+   void main () {
+    int num1, num2,answer;
+    short int opt;
+
+    printf(" 1.Add\n 2.Subtract\n 3.Multiply\n 4.Divide 5.Exit\n");
+    read_option:
+    printf("Enter your option\n",opt);
+    scanf("%d",&opt);
+    printf("Enter two values\n");
+    scanf("%d %d",&num1,&num2);
+
+    switch (opt) {
+    case 1:
+        answer=num1+num2;
+        printf("The addition is %d",answer);
+        goto read_option;
+        break;
+    case 2:
+        answer=num1-num2;
+        printf("The Subtraction is %d",answer);
+        goto read_option;
+        break;
+    case 3:
+        answer=num1*num2;
+        printf("The multiplication is %d",answer);
+        goto read_option;
+        break;
+    case 4:
+        answer=num1/num2;
+        printf("The division is %d",answer);
+        goto read_option;
+        break;
+    case 5:
+        printf("Thank you");
+        break;
+    default:
+        printf("Invalid input\n");
+        goto read_option;
+        break;
+        }
+
+}
