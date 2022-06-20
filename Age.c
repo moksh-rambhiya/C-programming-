@@ -10,9 +10,9 @@ void main () {
         }
         else if (a<25)
         {
-            printf("It is a Teen Adult\n");
+            printf("It is an Adult\n");
         }
-        else if (a<40)
+        else if (a<=55)
         {
             printf("It is a working Adult\n");
         }
@@ -20,7 +20,7 @@ void main () {
         {
             printf("It is a Senior Citizen\n");
         }
-        else if (a<100)
+        else if (a<=100)
         {
             printf("Hamare Zamane mein yeh sab nahi hota tha bolne wale log\n");
 

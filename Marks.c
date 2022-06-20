@@ -8,7 +8,7 @@ void main () {
         {
             printf("A+ Grade\n");
         }
-        else if (a>89)
+        else if (a>85)
         {
             printf("Ist Class\n");
         }
