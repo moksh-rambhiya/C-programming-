@@ -1,14 +1,21 @@
-   #include <stdio.h>
+ #include <stdio.h>
    void main () {
     int num1, num2,answer;
     short int opt;
 
-    printf(" 1.Add\n 2.Subtract\n 3.Multiply\n 4.Divide 5.Exit\n");
+    printf(" 1.Add\n 2.Subtract\n 3.Multiply\n 4.Divide\n 5.Exit\n");
     read_option:
     printf("Enter your option\n",opt);
     scanf("%d",&opt);
+    if (opt!=6){
     printf("Enter two values\n");
     scanf("%d %d",&num1,&num2);
+    }
+    else {
+        printf("Invalid input\n");
+        goto read_option;
+    }
+
 
     switch (opt) {
     case 1:
